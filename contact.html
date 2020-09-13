@@ -5,36 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilopersonal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<nav class="menu">
-    <a href="/index.html">INICIO</a>
-    <a href="/about.html">SOBRE MI</a>
-    <a href="/contact.html">CONTACTO</a>
-</nav>
-<div>
-    <div class="container">
-        <form>
-            <div>
-                <label for="nombre">Lena los datos para contactar</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui tu nombre..">
 
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html"> <span class="label">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </span></a>
+            </li>
+            <li><a href="/about.html"><span class="label">
+            <i class="fa fa-male" aria-hidden="true"></i>
+        </span></a></li>
+            <li><a href="/contact.html"><span class="label"><i class="fa fa-address-card" aria-hidden="true"></i></span></a></li>
+
+        </ul>
+    </nav>
+
+    <header id="contac">
+        <h1>Contáctame</h1>
+        <div>
+            <div class="container">
+                <form>
+                    <div>
+                        <label for="nombre">Lena tus datos </label>
+
+                    </div>
+                    <br>
+                    <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui tu nombre..">
+                    </div>
+                    <br>
+                </form>
+                <div>
+                    <label>Tema a tratar :</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" placeholder="Describe el problema"></textarea>
+
+                </div>
+                <button>Enviar</button>
+                </form>
             </div>
-            <div>
-                <label for="subject">Tema a tratar :</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Describe el problema" style="height:200px"></textarea>
+    </header>
 
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
+
+    <footer>
+        <div><i>Cel: 977975151</i></div>
+        <div><i>groemrop15@unc.edu.pe</i></div>
+    </footer>
+
+
     </div>
-
-
-    <div>
-        <div><i class="">977975151</i></div>
-        <div><i class="">groemrop15@unc.edu.pe</i></div>
-    </div>
-
-
-</div>
+</body>
 
 </html>

@@ -8,8 +8,15 @@ body {
     color: white;
     position: relative;
     justify-content: center;
-    display: flex;
-    align-items: center;
+}
+
+#header {
+    text-align: center;
+    margin: auto;
+    top: 15.9em;
+    position: relative;
+    width: 400px;
+    height: 400px;
 }
 
 #Titulo {
@@ -49,8 +56,58 @@ footer {
     right: 0px;
 }
 
-#nav_about {
-    list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
+#tabla {
+    width: 100%;
+}
+
+td,
+th {
+    width: 30%;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    align-items: center;
+}
+
+input {
+    border-radius: 15px;
+    border: 2px solid rgb(182, 125, 20);
+    padding: 0.5em;
+}
+
+#mensaje {
+    max-width: 500px;
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+    border: 2px solid rgb(182, 125, 20);
+    padding: 0.5em;
+}
+
+button {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    color: black;
+    background-color: peru;
+    border-radius: 16px;
+    border: 2px solid rgb(182, 125, 20);
+}
+
+#contac {
+    text-align: center;
+    margin: auto;
+    top: 5.9em;
+    position: relative;
+    width: 400px;
+    height: 400px;
 }
