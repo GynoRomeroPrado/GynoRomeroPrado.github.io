@@ -51,7 +51,9 @@ nav ul {
 }
 
 footer {
-    margin-top: 13.3em;
+    /* margin-top: 13.3em; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     text-align: right;
 }
@@ -110,4 +112,16 @@ button {
     position: relative;
     width: 400px;
     height: 400px;
+}
+
+audio {
+    width: 16em;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 90px;
+    transform: scale(0.9);
+    position: absolute;
+    top: 0;
+    width: 15%;
+    text-align: left;
+    opacity: 50%;
 }
