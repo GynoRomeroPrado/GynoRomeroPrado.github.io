@@ -51,11 +51,11 @@ nav ul {
 }
 
 footer {
-    /* margin-top: 13.3em; */
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     width: 100%;
     text-align: right;
+    background-color: black;
 }
 
 #tabla {
@@ -126,6 +126,11 @@ audio {
     opacity: 50%;
 }
 
+#carouselExampleControls {
+    width: 70%;
+    margin: auto;
+}
+
 .social {
     position: fixed;
     /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
@@ -139,9 +144,11 @@ audio {
 
 .social ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .social ul li a {
+    width: 50px;
     display: inline-block;
     color: #fff;
     background: #000;
