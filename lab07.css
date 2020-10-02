@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 107vh;
+    background-image: url("./src/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Podkova', serif;
+    color: white;
+    position: relative;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+label {
+    background-color: #4BB7F7;
+    color: white;
+}
+
+.labRed {
+    background-color: #AB3D40;
+    color: white;
+}
+
+.btn-yellow {
+    background-color: #B8B519;
+}
+
+.btn {
+    background-color: #4BB7F7;
+    color: white;
+}
+
+.btn2 {
+    background-color: #AB3D40;
+    color: white;
+}
