@@ -15,18 +15,18 @@ let p4 = document.getElementById("lect4");
 
 document.getElementById("turismo").addEventListener("click", turismo);
 
-let html = document.getElementById("carouselExampleControls").innerHTML;
+let html = document.getElementById("carouselExampleIndicators").innerHTML;
 let img = document.getElementById("img").innerHTML;
-document.getElementById("carouselExampleControls").style.display = "none";
+document.getElementById("carouselExampleIndicators").style.display = "none";
 
 function turismo() {
     if (flag == 0) {
         document.getElementById("img").style.display = "none";
-        document.getElementById("carouselExampleControls").style.display = "block";
+        document.getElementById("carouselExampleIndicators").style.display = "block";
         flag = 1;
     } else {
         document.getElementById("img").style.display = "block";
-        document.getElementById("carouselExampleControls").style.display = "none";
+        document.getElementById("carouselExampleIndicators").style.display = "none";
         flag = 0;
     }
 }
