@@ -3,7 +3,8 @@ let boton2 = document.getElementById("iconbook1");
 let boton3 = document.getElementById("iconbook2");
 let boton4 = document.getElementById("iconbook3");
 
-let panel = document.getElementById("Botonpanel");
+flag1 = 0;
+flag = 0;
 let fecha = document.getElementById("botoncultura");
 
 
@@ -12,7 +13,25 @@ let p2 = document.getElementById("lect2");
 let p3 = document.getElementById("lect3");
 let p4 = document.getElementById("lect4");
 
-flag1 = 0;
+document.getElementById("turismo").addEventListener("click", turismo);
+
+let html = document.getElementById("carouselExampleControls").innerHTML;
+let img = document.getElementById("img").innerHTML;
+document.getElementById("carouselExampleControls").style.display = "none";
+
+function turismo() {
+    if (flag == 0) {
+        document.getElementById("img").style.display = "none";
+        document.getElementById("carouselExampleControls").style.display = "block";
+        flag = 1;
+    } else {
+        document.getElementById("img").style.display = "block";
+        document.getElementById("carouselExampleControls").style.display = "none";
+        flag = 0;
+    }
+}
+
+
 
 document.getElementById("iconbook").addEventListener('click', function() {
     boton1.onclick = Cambiar(p1);
@@ -20,30 +39,21 @@ document.getElementById("iconbook").addEventListener('click', function() {
 });
 
 document.getElementById("iconbook1").addEventListener('click', function() {
-    boton2.onclick = Cambiar(p2);
+    boton2.onclick = Cambiar1(p2);
     flag1 = 1;
 
 });
 
 document.getElementById("iconbook2").addEventListener('click', function() {
-    boton3.onclick = Cambiar(p3);
+    boton3.onclick = Cambiar3(p3);
 
 });
 
 document.getElementById("iconbook3").addEventListener('click', function() {
-    boton4.onclick = Cambiar(p4);
+    boton4.onclick = Cambiar4(p4);
 
 });
 
-
-
-
-
-
-document.getElementById("Botonpanel").addEventListener('click', function() {
-
-    panel.onclick = Crearpanel()
-});
 
 document.getElementById("botoncultura").addEventListener('click', function() {
 
@@ -51,9 +61,43 @@ document.getElementById("botoncultura").addEventListener('click', function() {
 });
 
 function Cambiar(var1) {
-    var texto = "Lectura finalizada"
-    var1.innerHTML = texto;
-    console.log("Sdfsd")
+    if (flag == 0) {
+        document.getElementById("lect").innerHTML = "Lectura completada";
+        flag = 1;
+    } else {
+        document.getElementById("lect").innerHTML = "Lectura de 3 min";
+        flag = 0;
+    }
+}
+
+function Cambiar1(var2) {
+    if (flag == 0) {
+        document.getElementById("lect2").innerHTML = "Lectura completada";
+        flag = 1;
+    } else {
+        document.getElementById("lect2").innerHTML = "Lectura de 3 min";
+        flag = 0;
+    }
+}
+
+function Cambiar3(var2) {
+    if (flag == 0) {
+        document.getElementById("lect3").innerHTML = "Lectura completada";
+        flag = 1;
+    } else {
+        document.getElementById("lect3").innerHTML = "Lectura de 3 min";
+        flag = 0;
+    }
+}
+
+function Cambiar4(var2) {
+    if (flag == 0) {
+        document.getElementById("lect4").innerHTML = "Lectura completada";
+        flag = 1;
+    } else {
+        document.getElementById("lect4").innerHTML = "Lectura de 3 min";
+        flag = 0;
+    }
 }
 
 function Crearpanel() {
@@ -92,6 +136,8 @@ function Crearfecha() {
             flag = 0;
         }
     }
+
+
 
 
 }
